@@ -9,12 +9,12 @@ public class NameController {
 
     private String name = "Christian";
 
-    @GetMapping
+    @GetMapping("/get")
     public String getName(){
         return name;
     }
 
-    @PostMapping
+    @PostMapping("/post")
     public String postName() {
         return new StringBuilder(name).reverse().toString();
     }
